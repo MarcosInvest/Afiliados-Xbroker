@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -12,24 +11,27 @@
       box-sizing: border-box;
     }
 
-    body, html {
+    html, body {
       height: 100%;
       font-family: Arial, sans-serif;
+      background-color: black;
     }
 
     .background {
-      background: url('fundo.jpg') no-repeat center center fixed;
-      background-size: cover;
+      background: url('fundo.jpg') center center no-repeat;
+      background-size: contain;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: black;
       width: 100%;
-      height: 100%;
-      position: relative;
-      color: white;
-      text-align: center;
-      padding: 20px;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: center;
+      padding: 20px;
     }
 
     h1 {
